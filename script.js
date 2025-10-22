@@ -22,6 +22,8 @@ function getRandomDelay() {
       const totalTime = ((endTime - startTime) / 1000).toFixed(3);
 
       const tbody = document.getElementById("output");
+		const loadingRow = document.getElementById("loading");
+      if (loadingRow) loadingRow.remove();
 
 
       tbody.innerHTML = "";
